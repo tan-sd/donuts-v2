@@ -7,13 +7,13 @@ function getRandomNumber(min, max) {
 }
 
 export function Donut() {
-    const donutLongSprinkle = useGLTF("./donutLongSprinkle.glb");
-    const donutRoundSprinkle = useGLTF("./donutRoundSprinkle.glb");
+    const donutLongSprinkle = useGLTF("./model/donutLongSprinkle.glb");
+    const donutRoundSprinkle = useGLTF("./model/donutRoundSprinkle.glb");
     const donutRoundSprinkleBakedTexture = useTexture(
-        "./donutRoundSprinkleBaked.jpg"
+        "./texture/donutRoundSprinkleBaked.jpg"
     );
     const donutLongSprinkleBakedTexture = useTexture(
-        "./donutLongSprinkleBaked.jpg"
+        "./texture/donutLongSprinkleBaked.jpg"
     );
     const donutRef = useRef();
     const [rotationSpeed, setRotationSpeed] = useState(
